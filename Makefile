@@ -15,7 +15,6 @@ SRC	:=	main.c		\
 		error_utils.c	\
 		pipex.c		\
 		pipe_utils.c	\
-		main.cr		\
 		str_utils.c	\
 		cmd_utils.c	\
 
