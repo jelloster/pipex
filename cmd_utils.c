@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cmd_utils.c                                        :+:      :+:    :+:   */
+/*   cmd_utils_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: motuomin <motuomin@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 12:47:12 by motuomin          #+#    #+#             */
-/*   Updated: 2024/06/18 16:21:32 by motuomin         ###   ########.fr       */
+/*   Updated: 2024/06/18 16:17:46 by motuomin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "pipex_bonus.h"
 
 static int	extract_pathed_cmd(t_cmd *cmd, char **paths);
 static int	free_n_exit(char *p_cmd, char *s_cmd, char **args, int ret);

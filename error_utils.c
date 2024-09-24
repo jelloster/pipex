@@ -6,11 +6,11 @@
 /*   By: motuomin <motuomin@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 10:07:00 by motuomin          #+#    #+#             */
-/*   Updated: 2024/06/18 16:21:58 by motuomin         ###   ########.fr       */
+/*   Updated: 2024/06/18 16:11:18 by motuomin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "pipex_bonus.h"
 
 int	free_memory(t_cmd *cmds, t_aae *aae)
 {

@@ -1,37 +1,34 @@
-FLAGS			:=	-Wall -Wextra -Werror
-CC				:=	cc
-NAME			:=	pipex
-LIBFT			:=	libft/libft.a
+# ------------ NAME --------------
+NAME	:=	pipex
 
-# MANDATORY
-MANDATORY_SRC	:=	awk_split.c error_utils.c pipex.c pipe_utils.c main.c	\
-					str_utils.c cmd_utils.c ft_memdel.c
-					
-MANDATORY_OBJ	:= 	$(MANDATORY_SRC:.c=.o)
+# ---------- COMPILER ------------
+CC	:=	cc
 
-# BONUS FILES
-BONUS_SRC		:=	awk_split_bonus.c error_utils_bonus.c pipex_bonus.c		\
-					str_utils_bonus.c cmd_utils_bonus.c main_bonus.c    	\
-					pipe_utils_bonus.c ft_memdel_bonus.c
-BONUS_OBJ		:=	$(BONUS_SRC:.c=.o)
+# ----------- FLAGS --------------
+FLAGS	:=	-Wall -Wextra -Werror
+
+LIBFT	:=	libft/libft.a
+
+# -------- SOURCE FILES ----------
+SRC	:=	awk_split.c \
+		error_utils.c \
+		pipex.c \
+		pipe_utils.c \
+		main.c \
+		str_utils.c \
+		cmd_utils.c \
+		ft_memdel.c \
+
+OBJ	:= 	$(SRC:.c=.o)
 
 # -------------RULES--------------
  
-# MANDATORY COMPILATION
 
-$(NAME): $(MANDATORY_OBJ) $(LIBFT)
+$(NAME): $(OBJ) $(LIBFT)
 	$(CC) $(FLAGS) $(LIBFT) -o $@ $^
 
 %.o : %.c
 	$(CC) $(FLAGS) -c $< -o $@
-
-# BONUS COMPILATION
-
-.bonus : $(BONUS_OBJ) $(LIBFT)
-	$(CC) $(FLAGS) -o $(NAME) $^ $(LIBFT)
-	touch .bonus
-
-# LIBFT
 
 $(LIBFT):
 	@make -C libft

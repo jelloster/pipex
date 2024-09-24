@@ -6,7 +6,7 @@
 /*   By: motuomin <motuomin@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 12:48:21 by motuomin          #+#    #+#             */
-/*   Updated: 2024/06/18 14:11:52 by motuomin         ###   ########.fr       */
+/*   Updated: 2024/06/18 13:31:53 by motuomin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(int ac, char *av[], char *envp[])
 	t_cmd	*cmds;
 	int		i;
 
-	if (ac != 5)
+	if (ac < 5)
 	{
 		perror("Incorrect amount of arguments.");
 		exit (EXIT_FAILURE);

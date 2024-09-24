@@ -6,7 +6,7 @@
 /*   By: motuomin <motuomin@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 14:01:01 by motuomin          #+#    #+#             */
-/*   Updated: 2024/06/18 16:23:51 by motuomin         ###   ########.fr       */
+/*   Updated: 2024/06/18 16:15:13 by motuomin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ void	memory_error(t_cmd *cmds, t_aae *aae);
 int		free_memory(t_cmd *cmds, t_aae *aae);
 void	error_msg(int error, char *str, char *binary);
 
-//		ft_memdel.c
+//	ft_memdel_bonus.c
 void	*ft_memdel(char **ptr);
 
 #endif
