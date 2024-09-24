@@ -10,14 +10,14 @@ FLAGS	:=	-Wall -Wextra -Werror
 LIBFT	:=	libft/libft.a
 
 # -------- SOURCE FILES ----------
-SRC	:=	awk_split.c \
-		error_utils.c \
-		pipex.c \
-		pipe_utils.c \
-		main.c \
-		str_utils.c \
-		cmd_utils.c \
-		ft_memdel.c \
+SRC	:=	main.c		\
+		awk_split.c	\
+		error_utils.c	\
+		pipex.c		\
+		pipe_utils.c	\
+		main.cr		\
+		str_utils.c	\
+		cmd_utils.c	\
 
 OBJ	:= 	$(SRC:.c=.o)
 
@@ -40,7 +40,7 @@ all: $(NAME)
 
 .PHONY: clean
 clean:
-	rm -f $(MANDATORY_OBJ) $(BONUS_OBJ) .bonus
+	rm -f $(OBJ) $(OBJ) .bonus
 
 .PHONY: fclean
 fclean: clean

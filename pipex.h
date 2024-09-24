@@ -19,7 +19,7 @@
 # include <stdio.h>
 # include <fcntl.h>
 # include <sys/wait.h>
-# include "libft.h"
+# include "libft/inc/libft.h"
 # include <errno.h>
 
 typedef enum e_error_code

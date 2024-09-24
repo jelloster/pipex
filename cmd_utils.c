@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex_bonus.h"
+#include "pipex.h"
 
 static int	extract_pathed_cmd(t_cmd *cmd, char **paths);
 static int	free_n_exit(char *p_cmd, char *s_cmd, char **args, int ret);
